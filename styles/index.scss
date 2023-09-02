@@ -1,5 +1,6 @@
 @use "variables" as *;
 @use "header";
+@use "intro";
 
 *,
 *::before,
@@ -67,4 +68,17 @@ body {
   &:hover {
     opacity: 0.4;
   }
+}
+
+.title {
+  color: $primary-text-clr;
+
+  font-style: normal;
+  font-weight: 300;
+}
+
+.paragraph {
+  color: $secondary-text-clr;
+  font-style: normal;
+  font-weight: 400;
 }
