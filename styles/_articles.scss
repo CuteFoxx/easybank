@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+.articles {
+  margin-top: 170px;
+}
+.articles__list {
+  display: flex;
+
+  flex-basis: 255px;
+  gap: 30px;
+}
+.articles__title {
+  font-size: 40px;
+
+  margin-bottom: 40px;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 255px;
+  width: 100%;
+  &__img {
+    object-fit: cover;
+    max-width: 255px;
+    width: 100%;
+    height: 200px;
+
+    margin-bottom: 25px;
+  }
+  &__author {
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 8px;
+
+    &::before {
+      content: "By ";
+    }
+  }
+  &__title {
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    margin-bottom: 8px;
+
+    &:hover {
+      color: $primary-clr;
+    }
+  }
+  &__paragraph {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 750px) {
+  .articles__title {
+    text-align: center;
+  }
+  .articles__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+      max-width: 327px;
+      height: 200px;
+    }
+    &__author {
+      align-self: flex-start;
+    }
+  }
+}
