@@ -3,6 +3,7 @@
 @use "intro";
 @use "features";
 @use "articles";
+@use "footer";
 
 *,
 *::before,
@@ -12,13 +13,16 @@
   box-sizing: border-box;
 }
 
-body,
 html {
-  width: 100%;
+  margin: 0;
+  padding: 0;
+
   height: 100%;
 }
 body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
   width: 100%;
 
   font-family: "Public Sans", sans-serif;
@@ -83,4 +87,8 @@ body {
   color: $secondary-text-clr;
   font-style: normal;
   font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
 }
