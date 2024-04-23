@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-I improved my knwoledge in responsive markup.
+I improved my knowledge of responsive markup.
 
 ## Author
 
